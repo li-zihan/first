@@ -22,22 +22,7 @@ public class Regional_management {
   public void beforeTest() {
 	  method.OpenBrowser();
   }
-//  @Test(priority=2)
-//  public void Test2() throws BiffException, IOException, InterruptedException {
-//	  //method.login("cnooc","cnooc");
-//	  boolean bool = true;
-//	  String file = "F:/Test_Software/eclipse/jar/excel_jar/Regional.xls";
-//	  while(bool) {
-//		  method.driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//		  method.URl(Data.Regional_management_url());
-//		  method.Button("//*[@id='app']/div/div[2]/div/div[2]/div/div[1]/div[2]/button");
-//		  String text = method.Input_Box("//*[@id=\"NAME\"]", UserData.getFile(file));
-//		  method.Input_Box("//*[@id=\"CODE\"]", UserData.getFile(file));
-//		  method.Button("/html/body/div[2]/div/div[2]/div/div[2]/div[3]/div/button[2]");
-//		  bool = UserData.bool();
-//		  method.Label(By.xpath("//*[text()='"+text+"']"));		  
-//	  }
-//  }
+
   @Test(priority=4)
   public void Test4() throws BiffException, IOException, InterruptedException {
 	  System.out.println("修改区域测试用例执行结果-------------------------------------------------------------------");
