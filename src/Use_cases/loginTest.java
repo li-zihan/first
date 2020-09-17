@@ -75,8 +75,7 @@ public class loginTest {
 		  method.Button("/html/body/div[3]/div/div[2]/div/div[2]/div[3]/div/button[2]");
 		  bool = Excel_R.bool();
 		  method.Label(By.xpath("//*[text()='"+text+"']"));
-	//	  method.Label(By.xpath("//*[contains(text(),'" + text + "')]"));
-	//	  System.out.println(text);
+
 	  }
   }
 }
