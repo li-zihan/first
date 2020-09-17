@@ -41,6 +41,7 @@ public class loginTest {
 	  while(bool) {
 		  method.driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		  method.URl(Data.Regional_management_url());
+
 		  method.add();
 		  String text = method.Input_Box("//*[@id=\"NAME\"]", Excel_R.getFile(file));
 		  method.Input_Box("//*[@id=\"CODE\"]", Excel_R.getFile(file));
@@ -68,6 +69,14 @@ public class loginTest {
 				  method.yes();  
 			  }
 		  bool = Excel_R.bool();
+		  method.Button("//*[@id='app']/div/div[2]/div/div[2]/div/div[1]/div[2]/button");
+		  String text = method.Input_Box("//*[@id=\"NAME\"]", Excel_R.getFile(file));
+		  method.Input_Box("//*[@id=\"CODE\"]", Excel_R.getFile(file));
+		  method.Button("/html/body/div[3]/div/div[2]/div/div[2]/div[3]/div/button[2]");
+		  bool = Excel_R.bool();
+		  method.Label(By.xpath("//*[text()='"+text+"']"));
+	//	  method.Label(By.xpath("//*[contains(text(),'" + text + "')]"));
+	//	  System.out.println(text);
 	  }
   }
 }

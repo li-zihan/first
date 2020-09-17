@@ -72,7 +72,6 @@ public class Regional_management {
 		  }
 		  bool = Excel_R.bool();
 		  Thread.sleep(200);		  
+}
 	  }
-  }
-
 }

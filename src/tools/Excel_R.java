@@ -24,8 +24,13 @@ public class Excel_R {
 //		System.out.println("本文件一共："+cols+"列");
 //		System.out.println("本文件一共："+rows+"行");
 	    String str = sheet.getCell(column,line).getContents();
+
 	    if(column==(cols-1)) {
 	    	System.out.print("第"+line+"条测试用例执行成功，"+"用户名："+str+" "+"密码："+sheet.getCell(column,line).getContents()+" ");
+
+	    if(column==1) {
+	    	System.out.print("第"+line+"条测试用例执行成功，"+"用户名："+str+" "+"密码："+sheet.getCell(1,line).getContents()+" ");
+
 	    }
 	    ide = column;
 	    column++;
@@ -39,8 +44,9 @@ public class Excel_R {
 			line++;//行
 			line_end=false;
 		}
-		return str;
 	}
+		return str;
+}
 	//判断文件是否结束，重置line和column的值
 	public static boolean bool() {
 		if (bool==false) {
