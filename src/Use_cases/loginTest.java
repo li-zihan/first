@@ -21,6 +21,7 @@ public class loginTest {
 	}
   @Test(priority=1)
   //参照测试用例F:/Test_Software/eclipse/jar/excel_jar/UserName.xls
+  //自动化构建测试
   	public void Test1() throws InterruptedException, BiffException, IOException {
 	  	System.out.println("登录测试用例执行结果-------------------------------------------------------------------");
 	  	boolean bool = true;
@@ -34,7 +35,6 @@ public class loginTest {
   }
   @Test(priority=2)
   public void Test2() throws BiffException, IOException, InterruptedException {
-	  //method.login("cnooc","cnooc");
 	  System.out.println("新增区域测试用例执行结果-------------------------------------------------------------------");
 	  boolean bool = true;
 	  String file = "F:/Test_Software/eclipse/jar/excel_jar/Regional.xls";
