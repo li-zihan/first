@@ -21,7 +21,7 @@ public class loginTest {
 	}
   @Test(priority=1)
   //参照测试用例F:/Test_Software/eclipse/jar/excel_jar/UserName.xls
-  //自动化构建测试
+  //自动化构建测试-登录测试用例
   	public void Test1() throws InterruptedException, BiffException, IOException {
 	  	System.out.println("登录测试用例执行结果-------------------------------------------------------------------");
 	  	boolean bool = true;
