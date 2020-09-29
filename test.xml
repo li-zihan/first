@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Default suite" junit="false" verbose="3" parallel="false" thread-count="5" configfailurepolicy="skip"
+annotations="javadoc" time-out="10000" skipfailedinvocationcounts="true" data-provider-thread-count="5"
+object-factory="classname" allow-return-values="true" preserve-order="true" group-by-instances="false">
+
+<suite-files>
+<suite-file path="C:\eclipse\workspace\Turbine generator\test.xml"></suite-file>
+</suite-files>
+
+<method-selectors>
+         <method-selector>
+             <selector-class name="Test1" priority="1"></selector-class>
+             <selector-class name="Test2" priority="2"></selector-class>
+	<selector-class name="Test3" priority="3"></selector-class>
+             <script language="java"></script>
+         </method-selector>
+</method-selectors>
+
+<test name="testename" junit="false" verbose="3" parallel="false" thread-count="5" annotations="javadoc"
+           time-out="10000" enabled="true" skipfailedinvocationcounts="true" preserve-order="true"
+           allow-return-values="true">
+ <groups>
+             
+            <define name="lizihan">
+                <include name="组1" description="" invocation-numbers=""/>
+                 <include name="组2" description="" invocation-numbers=""/>
+            </define>
+            <!--运行组中组的配置-->
+            <!--组中组的依赖配置-->
+             <dependencies>
+                   <dependency>
+    		<groupId>org.apache-extras.java</groupId>
+    		<artifactId>bsh</artifactId>
+    		<version>2.0b6</version>
+	</dependency>
+             </dependencies>
+         </groups>
+        <packages>
+             <!--配置要执行的包，@name 必填，要执行的package名，如com.example.autotest-->
+             <package name="Use_cases">
+                 <!--除了该方法外，包内其他方法都执行，name 必填，不执行的方法名-->
+                 <exclude name=""></exclude>
+            </package>
+         </packages>
+     </test>
+ </suite>

@@ -21,7 +21,7 @@ public class loginTest {
 		method.OpenBrowser();
 	}
   @Test(priority=1)
-  //参照测试用例F:/Test_Software/eclipse/jar/excel_jar/UserName.xls
+  //参照测试用例F:/Test_Software/eclipse/jar/excel_jar/UserName.xls色哥但如果
   	public void Test1() throws InterruptedException, BiffException, IOException {
 	  	System.out.println("登录测试用例执行结果-------------------------------------------------------------------");
 	  	boolean bool = true;
