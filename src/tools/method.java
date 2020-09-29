@@ -51,7 +51,6 @@ public class method {
 		driver.findElement(By.xpath(element)).click();	
 	}
 	
-
 	//复选框
 	public static void Single_choice(int num) {
 		String str = ".//*[@class=\"ant-table-tbody\"]/tr["+num+"]/td[1]/.//input";
@@ -98,16 +97,7 @@ public class method {
 	
 	//操作栏
 	//修改、删除、查看
-	public static void operation() {}
-
-	//单选
-	public static void Single_choice(String element) {
-		
-	}
-	//翻页
-	//根据页数选择
-	public static void page() {
-//github.com/li-zihan/first
+	public static void operation() {
 		
 	}
 	

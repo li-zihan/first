@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Use_cases.Regional_management">
+      <class name="Use_cases.loginTest">
         <methods>
-          <include name="beforeTest"/>
+          <include name="start"/>
           <include name="Test3"/>
         </methods>
-      </class> <!-- Use_cases.Regional_management -->
+      </class> <!-- Use_cases.loginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
